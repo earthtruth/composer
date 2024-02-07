@@ -3,6 +3,7 @@
    margin:0;padding:0;
    overflow:hidden;
     }
+    /* p{text-indent:2em;} */
 article{
   display:inline-block;
   width:360x;
@@ -25,13 +26,14 @@ nav ul li{display:inline;}
 article header h4{height:50px;width:320px;
 
 }
-
+video-info{width:660px;}
 video{
-    width:360px;
-    height:270px;
+    width:640px;
+    height:480px;
     
 }
-
+.video-info p{width:640px;
+    margin:10px;}
 
 .search-area{
     text-align:center;
