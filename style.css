@@ -1,19 +1,31 @@
+
+*{color:#000000;background-color:#FFFFFF;
+   margin:0;padding:0;
+   overflow:hidden;
+    }
 article{
   display:inline-block;
-  width:400px;
-  height:400px;
+  width:360x;
+  height:240px;
   margin-bottom:50px;
   padding:20px;
   background-color:#FFFFFF;
   border:3px solid #eeeeee;
   border-radius:3px;
 }
-.allcontent{
-  background-color:#EEEEDD;
+.maincontent{background-color:#EEEEDD;}
+
+nav{height:100px;
+    background-image:linear-gradient(180deg, #eeeeff 2px, #E0E0E0 30px, #4444AA 60px);/* 第一色持续范围,渐变色开始的范围,第三个渐变色开始的范围 */
 }
-nav ul li{
-    display:inline;
+nav ul{background-color:transparent;
+     }
+nav ul li{display:inline;}
+
+article header h4{height:50px;width:320px;
+
 }
+
 video{
     width:360px;
     height:270px;
@@ -23,4 +35,7 @@ video{
 
 .search-area{
     text-align:center;
+}
+.img-prev{
+
 }
