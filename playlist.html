@@ -3,8 +3,8 @@
         <title>composer</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css" type="text/css" />
-        <script src="scripts/script.js"></script>
+        <link rel="stylesheet" href="style2.css" type="text/css" />
+        <script src="jquery2.2.4.min.js"></script>
         <script type="javascript">
             
         </script> 
@@ -35,21 +35,15 @@
 				</div>
 				
 				<div class="middle">
+                    <h2></h2>
                     <div id="video-frame">
-                        <video id="myvideo" width="640" height="480" controls>
-                            <source src="videos/2024-02-02 21-36-04dash!with_music.mp4" type="video/mp4">
-                        </object> 
-                    </video>
+                        <video id="myVideo" src="old_source.mp4" width="640px" height="480px" controls="controls"></video>
                         
                     </div>
                     
                     <div class= "video-info">
-                        <p>
-                        the game is trigger rally earler version! and I replaced the 3D car model to Dash machine by free software. <br />
-                            
-                            Thanks to Lmms! So I can play my favorate game with my custom music! Dash! Ahead!
-                        This is a game with low power consumption.
-                        Let's fight, save our earth!
+                        <p id="v-info">
+                            please check!
                         </p>
                         
                     </div>
@@ -69,4 +63,18 @@
 			</footer>
 		</div>
 	</body>
+    <script>
+        $(document).ready(function(){
+            var get_src=sessionStorage.getItem("cur_src");
+            var get_src2=sessionStorage.getItem("cur_src2");
+            var get_src3=sessionStorage.getItem("cur_src3");
+            <!-- var full_src='video/'+get_src2; -->
+            let final_src=get_src2.slice(0,-4);
+            <!-- alert(final_src); -->
+            $(".middle h2").html(get_src);//获取标题，从跳转起始页获取
+            $('#video-frame').children('video').attr('src',final_src);
+            <!-- $('#myVideo').attr('src',full_src); 亦可-->
+            $("#v-info").html(get_src3);
+        })
+    </script>
 </html>
