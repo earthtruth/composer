@@ -7,7 +7,7 @@
         p{width:360px;}
 article{
   display:inline-block;
-  width:360x;
+  width:325px;
   height:275px;
   margin-bottom:50px;
   padding:20px;
@@ -15,7 +15,7 @@ article{
   border:3px solid #eeeeee;
   border-radius:3px;
 }
-.maincontent{background-color:#EEEEDD;}
+.maincontent{width:1500px;background-color:#EEEEDD;margin:0 auto;}
 
 nav{height:100px;
     background-image:linear-gradient(180deg, #eeeeff 2px, #E0E0E0 30px, #4444AA 60px);/* 第一色持续范围,渐变色开始的范围,第三个渐变色开始的范围 */
